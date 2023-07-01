@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asmaa Bank</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h2>Transfering money</h2>
+      <p>Asmaa Bank</p>
+    </div>
+    <div class="Data">
+      <form class="inputs">
+        <input placeholder="NAME" type="text" id="name" class="st" />
+        <input placeholder="E-MAIL" type="email" id="email" />
+        <input placeholder="Amount" type="text" id="Amount" />
+        <button id="submit">transfer</button>
+      </form>
+      <div class="outputs">
+        <div class="searchBlock">
+          <input
+            onkeyup="searchData(this.value)"
+            type="text"
+            id="search"
+            placeholder="search"
+          />
+          <div class="btnSearch">
+            <button onclick="getsearchMood(this.id)" id="searchName">
+              Search By Name
+            </button>
+            <button onclick="getsearchMood(this.id)" id="searchMail">
+              Search By Mail
+            </button>
+          </div>
+        </div>
+
+        <table id="tb">
+          <thead>
+            <tr>
+              <th>NAME</th>
+              <th>E-MAIL</th>
+              <th>Amount</th>
+              <th>UPDATE</th>
+              <th>DELETE</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
